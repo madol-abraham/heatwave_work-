@@ -171,9 +171,6 @@ npm start
 <img width="1366" height="768" alt="Screenshot (255)" src="https://github.com/user-attachments/assets/7ed3d95c-e41f-4065-b9b2-0e4edfb22bce" />
 
 
-
-<img width="1366" height="768" alt="Screenshot (250)" src="https://github.com/user-attachments/assets/689dc3f7-29a6-4773-93bb-c8854124c52c" />
-
  **System Architecture**
 - **Backend**: FastAPI + SQLite + Firebase + Google Earth Engine
 - **Mobile**: Flutter with Firebase integration
