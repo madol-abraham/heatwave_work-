@@ -1,0 +1,41 @@
+rules_version = '2';
+service cloud.firestore {
+  match /databases/{database}/documents {
+    // Users can read/write their own user document
+    match /users/{userId} {
+      allow read, write: if request.auth != null && request.auth.uid == userId;
+      allow read: if request.auth != null && isAdmin();
+    }
+    
+    // Users can read/write their own alerts
+    match /alerts/{alertId} {
+      allow read, write: if request.auth != null && resource.data.userId == request.auth.uid;
+      allow create: if request.auth != null && request.resource.data.userId == request.auth.uid;
+      allow create: if request.auth != null && isAdmin(); // Admin can create alerts for any user
+    }
+    
+    // Manual alerts - only admins can create, users can read
+    match /manual_alerts/{alertId} {
+      allow read: if request.auth != null;
+      allow create, update, delete: if request.auth != null && isAdmin();
+    }
+    
+    // Support and feedback - users can create, admins can read all
+    match /support/{docId} {
+      allow create: if request.auth != null;
+      allow read: if request.auth != null && (resource.data.userId == request.auth.uid || isAdmin());
+    }
+    
+    match /feedback/{docId} {
+      allow create: if request.auth != null;
+      allow read: if request.auth != null && (resource.data.userId == request.auth.uid || isAdmin());
+    }
+    
+    // Helper function to check if user is admin
+    function isAdmin() {
+      return exists(/databases/$(database)/documents/users/$(request.auth.uid)) &&
+             get(/databases/$(database)/documents/users/$(request.auth.uid)).data.get('isAdmin', false) == true ||
+             get(/databases/$(database)/documents/users/$(request.auth.uid)).data.get('role', '') == 'admin';
+    }
+  }
+}

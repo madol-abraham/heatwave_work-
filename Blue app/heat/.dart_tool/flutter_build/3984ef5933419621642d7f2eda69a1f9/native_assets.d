@@ -1,0 +1,1 @@
+ C:\\Users\\HP1\\Downloads\\Blue\ app\\heat\\.dart_tool\\flutter_build\\3984ef5933419621642d7f2eda69a1f9\\native_assets.yaml: 

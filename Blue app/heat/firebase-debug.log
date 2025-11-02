@@ -1,0 +1,37 @@
+[debug] [2025-10-27T20:29:13.376Z] ----------------------------------------------------------------------
+[debug] [2025-10-27T20:29:13.381Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\HP1\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js projects:list --json
+[debug] [2025-10-27T20:29:13.382Z] CLI Version:   14.21.0
+[debug] [2025-10-27T20:29:13.382Z] Platform:      win32
+[debug] [2025-10-27T20:29:13.382Z] Node Version:  v20.18.0
+[debug] [2025-10-27T20:29:13.382Z] Time:          Mon Oct 27 2025 23:29:13 GMT+0300 (East Africa Time)
+[debug] [2025-10-27T20:29:13.383Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2025-10-27T20:29:14.103Z] Object "" in "firebase.json" has unknown property: {"additionalProperty":"flutter"}
+[debug] [2025-10-27T20:29:14.115Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2025-10-27T20:29:14.116Z] > authorizing via signed-in user (m.madol@alustudent.com)
+[debug] [2025-10-27T20:29:14.130Z] Checked if tokens are valid: true, expires at: 1761600456216
+[debug] [2025-10-27T20:29:14.131Z] Checked if tokens are valid: true, expires at: 1761600456216
+[debug] [2025-10-27T20:29:14.137Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects pageSize=1000
+[debug] [2025-10-27T20:29:16.113Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects 200
+[debug] [2025-10-27T20:29:16.114Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects [omitted]
+[info] ┌──────────────────────┬────────────────────────┬────────────────┬──────────────────────┐
+│ Project Display Name │ Project ID             │ Project Number │ Resource Location ID │
+├──────────────────────┼────────────────────────┼────────────────┼──────────────────────┤
+│ buss-pass            │ buss-pass-6bda1        │ 617500355829   │ [Not specified]      │
+├──────────────────────┼────────────────────────┼────────────────┼──────────────────────┤
+│ BussPass             │ busspass-33fab         │ 104676529768   │ [Not specified]      │
+├──────────────────────┼────────────────────────┼────────────────┼──────────────────────┤
+│ busspass-app         │ busspass-app           │ 466236450755   │ [Not specified]      │
+├──────────────────────┼────────────────────────┼────────────────┼──────────────────────┤
+│ fintech              │ fintech-fcc13          │ 275989232116   │ [Not specified]      │
+├──────────────────────┼────────────────────────┼────────────────┼──────────────────────┤
+│ fluteterproject      │ fluteterproject        │ 227473018528   │ [Not specified]      │
+├──────────────────────┼────────────────────────┼────────────────┼──────────────────────┤
+│ harara               │ harara-253af (current) │ 724307882773   │ [Not specified]      │
+└──────────────────────┴────────────────────────┴────────────────┴──────────────────────┘
+[info] 
+[info] 6 project(s) total.
+[debug] [2025-10-27T20:29:16.268Z] Error: EBUSY: resource busy or locked, unlink 'C:\Users\HP1\Downloads\Blue app\heat\firebase-debug.log'
+    at Object.unlinkSync (node:fs:1885:11)
+    at process.<anonymous> (C:\Users\HP1\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\cli.js:44:16)
+    at process.emit (node:events:531:35)

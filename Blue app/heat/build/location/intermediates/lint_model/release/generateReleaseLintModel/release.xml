@@ -1,0 +1,31 @@
+<variant
+    name="release"
+    package="com.lyokone.location"
+    minSdkVersion="16"
+    targetSdkVersion="16"
+    mergedManifest="C:\Users\HP1\Downloads\Blue app\heat\build\location\intermediates\merged_manifest\release\processReleaseManifest\AndroidManifest.xml"
+    manifestMergeReport="C:\Users\HP1\Downloads\Blue app\heat\build\location\outputs\logs\manifest-merger-release-report.txt"
+    proguardFiles="C:\Users\HP1\Downloads\Blue app\heat\build\location\intermediates\default_proguard_files\global\proguard-android.txt-8.6.0"
+    partialResultsDir="C:\Users\HP1\Downloads\Blue app\heat\build\location\intermediates\lint_partial_results\release\lintAnalyzeRelease\out">
+  <buildFeatures
+      namespacing="REQUIRED"/>
+  <sourceProviders>
+    <sourceProvider
+        manifests="src\main\AndroidManifest.xml"
+        javaDirectories="src\main\java;src\release\java;src\main\kotlin;src\release\kotlin"
+        resDirectories="src\main\res;src\release\res"
+        assetsDirectories="src\main\assets;src\release\assets"/>
+  </sourceProviders>
+  <testSourceProviders>
+  </testSourceProviders>
+  <testFixturesSourceProviders>
+  </testFixturesSourceProviders>
+  <artifact
+      classOutputs="C:\Users\HP1\Downloads\Blue app\heat\build\location\intermediates\javac\release\compileReleaseJavaWithJavac\classes;C:\Users\HP1\Downloads\Blue app\heat\build\location\tmp\kotlin-classes\release;C:\Users\HP1\Downloads\Blue app\heat\build\location\intermediates\compile_r_class_jar\release\generateReleaseRFile\R.jar"
+      type="MAIN"
+      applicationId="com.lyokone.location"
+      generatedSourceFolders="C:\Users\HP1\Downloads\Blue app\heat\build\location\generated\ap_generated_sources\release\out"
+      generatedResourceFolders="C:\Users\HP1\Downloads\Blue app\heat\build\location\generated\res\resValues\release"
+      desugaredMethodsFiles="C:\Users\HP1\.gradle\caches\transforms-4\e3e6cb55bc83c1f88cb5738a7ae8c9f5\transformed\D8BackportedDesugaredMethods.txt">
+  </artifact>
+</variant>

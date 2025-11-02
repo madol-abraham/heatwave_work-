@@ -1,0 +1,4 @@
+#Sun Nov 02 17:14:04 EAT 2025
+base.0=C\:\\Users\\HP1\\Downloads\\Blue app\\heat\\build\\app\\intermediates\\dex\\release\\minifyReleaseWithR8\\classes.dex
+path.0=classes.dex
+renamed.0=classes.dex

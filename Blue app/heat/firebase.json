@@ -1,0 +1,25 @@
+{
+  "firestore": {
+    "rules": "firestore.rules"
+  },
+  "flutter": {
+    "platforms": {
+      "dart": {
+        "lib/firebase_options.dart": {
+          "projectId": "harara-253af",
+          "configurations": {
+            "android": "1:724307882773:android:323aa58a708fab97966f1c",
+            "web": "1:724307882773:web:b0bac5102e068e5b966f1c"
+          }
+        }
+      },
+      "android": {
+        "default": {
+          "projectId": "harara-253af",
+          "appId": "1:724307882773:android:323aa58a708fab97966f1c",
+          "fileOutput": "android/app/google-services.json"
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,54 @@
+{
+  "project_info": {
+    "project_number": "724307882773",
+    "project_id": "harara-253af",
+    "storage_bucket": "harara-253af.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:724307882773:android:7d2771b2fe3fcec7966f1c",
+        "android_client_info": {
+          "package_name": "com.harara.app"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "724307882773-fc063mdbpsmcps8u0ulssp8g74cp4dh2.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.harara.app",
+            "certificate_hash": "ea6ef25c44a0b184d68064ac434d6a2fc02e893b"
+          }
+        },
+        {
+          "client_id": "724307882773-muml11p8te9urfghmc51ce7gdkjpq0cv.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBms_ZIUamwgJMHczaJlJeckCEuzAPejqw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "724307882773-muml11p8te9urfghmc51ce7gdkjpq0cv.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "724307882773-5declmfvfecik1fh2c1rrkrqfgdv6asa.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.example.heat"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

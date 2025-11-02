@@ -1,0 +1,7 @@
+heat/.dart_tool/
+heat/build/
+heat/.flutter-plugins-dependencies
+
+# Environment variables
+.env
+*.env
