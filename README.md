@@ -135,18 +135,6 @@ npm start
 
 
 
-
-
-<img width="284" height="574" alt="iPhone-13-PRO-MAX-localhost (7)" src="https://github.com/user-attachments/assets/b7a66b86-d505-41cb-8c4b-8f1f3c3ee152" />
-
-
-
-
-
-<img width="284" height="574" alt="iPhone-13-PRO-MAX-localhost (6)" src="https://github.com/user-attachments/assets/a4e5345d-3c5d-42d0-a786-bd7d7b419b18" />
-
-
-
 <img width="284" height="574" alt="iPhone-13-PRO-MAX-localhost (12)" src="https://github.com/user-attachments/assets/e9c430cb-5d79-453a-a00d-0c04801f2298" />
 
 
