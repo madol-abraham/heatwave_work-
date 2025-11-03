@@ -166,14 +166,31 @@ npm start
 
 
  
-<img width="1366" height="768" alt="Screenshot (254)" src="https://github.com/user-attachments/assets/b320d577-f1ff-4f42-b2ca-47645f21d5bd" />
+<img width="284" height="574" alt="iPhone-13-PRO-MAX-localhost (12)" src="https://github.com/user-attachments/assets/dcc4567d-3dad-4f7e-9ace-8dae7a19a690" />
 
 
 
-<img width="1366" height="768" alt="Screenshot (255)" src="https://github.com/user-attachments/assets/7ed3d95c-e41f-4065-b9b2-0e4edfb22bce" />
+
+<img width="284" height="574" alt="iPhone-13-PRO-MAX-localhost (13)" src="https://github.com/user-attachments/assets/b0489bd4-27ae-41b0-9e86-640044519177" />
 
 
- **System Architecture**
+
+
+<img width="284" height="574" alt="iPhone-13-PRO-MAX-localhost (14)" src="https://github.com/user-attachments/assets/b8799d62-8c8c-4db5-a5eb-7824645b9a72" />
+
+
+
+<img width="284" height="574" alt="iPhone-13-PRO-MAX-localhost (15)" src="https://github.com/user-attachments/assets/12816a1f-1d51-48d8-bf2d-816b4fa84afb" />
+
+
+
+
+
+
+
+
+ 
+**System Architecture**
 - **Backend**: FastAPI + SQLite + Firebase + Google Earth Engine
 - **Mobile**: Flutter with Firebase integration
 - **Dashboard**: React + Chart.js
