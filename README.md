@@ -147,8 +147,24 @@ npm start
 
 
 
+<img width="284" height="574" alt="iPhone-13-PRO-MAX-localhost (12)" src="https://github.com/user-attachments/assets/e9c430cb-5d79-453a-a00d-0c04801f2298" />
 
 
+
+<img width="284" height="574" alt="iPhone-13-PRO-MAX-localhost (13)" src="https://github.com/user-attachments/assets/7c159172-5021-4cd9-8a44-f0ef9f01ae24" />
+
+
+<img width="284" height="574" alt="iPhone-13-PRO-MAX-localhost (14)" src="https://github.com/user-attachments/assets/0b794f15-5894-49d8-aa2b-ee2788468935" />
+
+
+
+<img width="284" height="574" alt="iPhone-13-PRO-MAX-localhost (15)" src="https://github.com/user-attachments/assets/7a28d671-757c-459d-ac9a-02538cbdc9f3" />
+
+
+
+<img width="284" height="574" alt="iPhone-13-PRO-MAX-localhost (11)" src="https://github.com/user-attachments/assets/fa071383-cdfa-49ca-a571-ac08205af6c6" />
+
+<img width="284" height="574" alt="iPhone-13-PRO-MAX-localhost (16)" src="https://github.com/user-attachments/assets/a89ab934-0923-467d-999b-382fab569ab5" />
 
 <img width="1366" height="768" alt="Screenshot (251)" src="https://github.com/user-attachments/assets/38b4b7f5-f3d9-4273-9853-a654d82d208d" />
 
@@ -165,18 +181,8 @@ npm start
 
 
 
- 
-<img width="284" height="574" alt="iPhone-13-PRO-MAX-localhost (12)" src="https://github.com/user-attachments/assets/dcc4567d-3dad-4f7e-9ace-8dae7a19a690" />
 
-
-
-
-<img width="284" height="574" alt="iPhone-13-PRO-MAX-localhost (13)" src="https://github.com/user-attachments/assets/b0489bd4-27ae-41b0-9e86-640044519177" />
-
-
-
-
-
+<img width="1366" height="768" alt="Screenshot (255)" src="https://github.com/user-attachments/assets/4400707f-d2e1-428e-a11b-94a558ba5402" />
 
 
 
