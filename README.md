@@ -1,5 +1,5 @@
 # Harara: A Real time Heatwave Prediction System for South Sudan
- **Harara** which means "Heat" in Arabic is jan intelligent early warning system that predicts heatwave conditions across 6 major cities in South Sudan.
+ **Harara** which means "Heat" in Arabic is an intelligent early warning system that predicts heatwave conditions across 6 major cities in South Sudan.
 Using satellite data and machine learning, the system provides 7-day heatwave forecasts and sends SMS alerts to registered users to help communities prepare for extreme heat events.
 The system includes real-time monitoring, predictive analytics, and comprehensive dashboard for authorities and researchers.
 
