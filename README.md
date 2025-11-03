@@ -93,6 +93,7 @@ npm start
 ```
 
  **Testing Highlights**
+ 
  **Accurate heatwave predictions** for 6 South Sudan cities  
  **Real-time SMS alerts** sent to registered users  
  **Interactive maps** showing risk levels and forecasts  
@@ -101,6 +102,76 @@ npm start
  **Firebase integration** for real-time data sync  
  **Google Earth Engine** satellite data processing  
  **Machine learning models** with 85%+ accuracy  
+
+ **Screenshot Highlights**
+
+
+
+
+![ACT](https://github.com/user-attachments/assets/ef90f4ec-af4c-41d2-b96e-33ad0dc42946)
+
+![ACT](https://github.com/user-attachments/assets/0f1fb6a0-b493-4aa3-87a7-f04d58069c29)
+
+
+
+
+
+<img width="284" height="574" alt="iPhone-13-PRO-MAX-localhost (3)" src="https://github.com/user-attachments/assets/2b5a96b0-169c-4a01-ac87-2349cdfbbb74" />
+
+
+<img width="284" height="574" alt="iPhone-13-PRO-MAX-localhost (4)" src="https://github.com/user-attachments/assets/c2f3f02d-3f17-4cb4-b53f-89def198dbd0" />
+
+
+
+
+
+<img width="284" height="574" alt="iPhone-13-PRO-MAX-localhost (9)" src="https://github.com/user-attachments/assets/56f4522e-e05a-41e1-a92a-67ccbd4f0641" />
+
+
+
+
+
+<img width="284" height="574" alt="iPhone-13-PRO-MAX-localhost (8)" src="https://github.com/user-attachments/assets/9bb18c3f-64d8-4e63-8ce2-e9bbc68e7a89" />
+
+
+
+
+
+<img width="284" height="574" alt="iPhone-13-PRO-MAX-localhost (7)" src="https://github.com/user-attachments/assets/b7a66b86-d505-41cb-8c4b-8f1f3c3ee152" />
+
+
+
+
+
+<img width="284" height="574" alt="iPhone-13-PRO-MAX-localhost (6)" src="https://github.com/user-attachments/assets/a4e5345d-3c5d-42d0-a786-bd7d7b419b18" />
+
+
+
+
+
+
+<img width="1366" height="768" alt="Screenshot (251)" src="https://github.com/user-attachments/assets/38b4b7f5-f3d9-4273-9853-a654d82d208d" />
+
+
+
+
+
+<img width="1366" height="768" alt="Screenshot (252)" src="https://github.com/user-attachments/assets/0b5fcf7a-0251-47f8-b7fc-d2cbc6b9807d" />
+
+ 
+
+
+<img width="1366" height="768" alt="Screenshot (253)" src="https://github.com/user-attachments/assets/631a509a-b2a7-4e33-a1b4-5dbc6da0fc8a" />
+
+
+
+ 
+<img width="1366" height="768" alt="Screenshot (254)" src="https://github.com/user-attachments/assets/b320d577-f1ff-4f42-b2ca-47645f21d5bd" />
+
+
+
+<img width="1366" height="768" alt="Screenshot (255)" src="https://github.com/user-attachments/assets/7ed3d95c-e41f-4065-b9b2-0e4edfb22bce" />
+
 
  **System Architecture**
 - **Backend**: FastAPI + SQLite + Firebase + Google Earth Engine
@@ -185,6 +256,15 @@ The system's ability to predict heatwaves 7 days in advance provides crucial pre
  **Health impact integration** linking heatwave predictions to hospital preparedness
  **Agricultural advisory** system for crop protection recommendations
 
- **Owner**
+ 
+ **Integration with the data from the metrological stations in South Sudan**
+ **Add support for more climate events such as drought and flood** 
+ **Enhance mobile app** with offline capabilities
+ **Add voice alert support** for non-literate users
+ **Improve model** with more datasets from metrogical stations
+ **Expand coverage** to other towns in the country
+ **Advanced analytics** for climate trend analysis
+
+**Owner**
 **Madol Abraham Kuol Madol**  
 📧 Email: m.madol@alustudent.com
