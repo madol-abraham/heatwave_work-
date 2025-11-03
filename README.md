@@ -104,7 +104,7 @@ npm start
  **Machine learning models** with 85%+ accuracy  
 
  **Demo Video** 
- **Link**: [https://www.youtube.com/watch?v=bgV1oViEdYo](url)
+ **Link**: [demo](https://www.youtube.com/watch?v=bgV1oViEdYo)
  
 
  **Screenshot Highlights**
