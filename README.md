@@ -103,6 +103,12 @@ npm start
  **Google Earth Engine** satellite data processing  
  **Machine learning models** with 85%+ accuracy  
 
+ **Demo Video** 
+ **Link**: [demo](https://www.youtube.com/watch?v=bgV1oViEdYo)
+ 
+ **Link to apk**: [APK](https://drive.google.com/file/d/11UEd1bWOwqiK9dgd4eJJ9xnU75kMM2hz/view?usp=sharing)
+ 
+
  **Screenshot Highlights**
 
 
@@ -135,20 +141,24 @@ npm start
 
 
 
-
-
-<img width="284" height="574" alt="iPhone-13-PRO-MAX-localhost (7)" src="https://github.com/user-attachments/assets/b7a66b86-d505-41cb-8c4b-8f1f3c3ee152" />
-
+<img width="284" height="574" alt="iPhone-13-PRO-MAX-localhost (12)" src="https://github.com/user-attachments/assets/e9c430cb-5d79-453a-a00d-0c04801f2298" />
 
 
 
-
-<img width="284" height="574" alt="iPhone-13-PRO-MAX-localhost (6)" src="https://github.com/user-attachments/assets/a4e5345d-3c5d-42d0-a786-bd7d7b419b18" />
-
+<img width="284" height="574" alt="iPhone-13-PRO-MAX-localhost (13)" src="https://github.com/user-attachments/assets/7c159172-5021-4cd9-8a44-f0ef9f01ae24" />
 
 
+<img width="284" height="574" alt="iPhone-13-PRO-MAX-localhost (14)" src="https://github.com/user-attachments/assets/0b794f15-5894-49d8-aa2b-ee2788468935" />
 
 
+
+<img width="284" height="574" alt="iPhone-13-PRO-MAX-localhost (15)" src="https://github.com/user-attachments/assets/7a28d671-757c-459d-ac9a-02538cbdc9f3" />
+
+
+
+<img width="284" height="574" alt="iPhone-13-PRO-MAX-localhost (11)" src="https://github.com/user-attachments/assets/fa071383-cdfa-49ca-a571-ac08205af6c6" />
+
+<img width="284" height="574" alt="iPhone-13-PRO-MAX-localhost (16)" src="https://github.com/user-attachments/assets/a89ab934-0923-467d-999b-382fab569ab5" />
 
 <img width="1366" height="768" alt="Screenshot (251)" src="https://github.com/user-attachments/assets/38b4b7f5-f3d9-4273-9853-a654d82d208d" />
 
@@ -165,15 +175,20 @@ npm start
 
 
 
+
+<img width="1366" height="768" alt="Screenshot (255)" src="https://github.com/user-attachments/assets/4400707f-d2e1-428e-a11b-94a558ba5402" />
+<img width="1366" height="768" alt="Screenshot (257)" src="https://github.com/user-attachments/assets/83268bde-bbc1-4792-a2ce-04f218ace16d" />
+
+
+
+
+<img width="1366" height="768" alt="Screenshot (258)" src="https://github.com/user-attachments/assets/2f858ff5-9317-4cb1-92cd-d7967ab2cb0e" />
+
+
+
+
  
-<img width="1366" height="768" alt="Screenshot (254)" src="https://github.com/user-attachments/assets/b320d577-f1ff-4f42-b2ca-47645f21d5bd" />
-
-
-
-<img width="1366" height="768" alt="Screenshot (255)" src="https://github.com/user-attachments/assets/7ed3d95c-e41f-4065-b9b2-0e4edfb22bce" />
-
-
- **System Architecture**
+**System Architecture**
 - **Backend**: FastAPI + SQLite + Firebase + Google Earth Engine
 - **Mobile**: Flutter with Firebase integration
 - **Dashboard**: React + Chart.js
