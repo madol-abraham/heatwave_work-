@@ -1,7 +1,5 @@
 # =============================================================================
 # Populate Initial System Logs
-# Creates sample system logs for testing the export functionality
-# =============================================================================
 
 import os
 import json
@@ -28,7 +26,7 @@ def init_firestore():
             firebase_admin.initialize_app(cred)
             return firestore.client()
     except Exception as e:
-        print(f"❌ Firestore init error: {e}")
+        print(f" Firestore init error: {e}")
         return None
 
 def populate_sample_logs():

@@ -12,19 +12,13 @@ from firebase_admin import messaging
 # Load environment variables
 load_dotenv()
 
-# =============================================================================
-# AFRICA'S TALKING CONFIGURATION
-# =============================================================================
-# Make sure these are defined in your .env file:
-# AT_USERNAME=sandbox
-# AT_API_KEY=your_generated_api_key_here
 AT_USERNAME = os.getenv("AT_USERNAME", "Madolkuol")  # default sandbox
 AT_API_KEY = os.getenv("AT_API_KEY")
 
 try:
     africastalking.initialize(AT_USERNAME, AT_API_KEY)
     sms = africastalking.SMS
-    print("✅ Africa’s Talking SMS service initialized.")
+    print("Afica’s Talking SMS service initialized.")
 except Exception as e:
     print(f" Error initializing Africa’s Talking: {e}")
     sms = None
@@ -48,7 +42,7 @@ def send_sms(to_number: str, message: str):
 
     try:
         response = sms.send(message, [to_number])
-        print(f"✅ SMS sent to {to_number}: {response}")
+        print(f" SMS sent to {to_number}: {response}")
         return {"status": "sent", "response": response}
     except Exception as e:
         print(f" SMS send failed: {e}")
@@ -72,7 +66,7 @@ def send_fcm_notification(tokens, title, body, data=None):
             tokens=tokens
         )
         resp = messaging.send_multicast(msg)
-        print(f"✅ FCM sent: {resp.success_count} success, {resp.failure_count} failure(s)")
+        print(f" FCM sent: {resp.success_count} success, {resp.failure_count} failure(s)")
         return {"status": "sent", "success": resp.success_count}
     except Exception as e:
         print(f" FCM error: {e}")

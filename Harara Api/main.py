@@ -1,12 +1,10 @@
 # =============================================================================
 # Harara Heatwave API 
-# - Loads trained artifacts (scaler, model, threshold)
+# - Loads trained artifacts 
 # - Pulls features from Google Earth Engine
 # - Produces 7-day heatwave risk per town
-# - Stores results in SQLite + Firestore (Firebase)
+# - Stores results in SQLite + Firestore 
 # - Exposes HTTP endpoints (manual run, latest results, quick viz, mock)
-# - Runs an automated daily prediction at 07:00
-# =============================================================================
 
 import os, io, json, datetime as dt
 from zoneinfo import ZoneInfo
@@ -33,7 +31,6 @@ from auth import require_auth
 from fastapi import Depends
 import time
 
-# =============================================================================
 # AFRICA'S TALKING SMS SETUP
 # =============================================================================
 import africastalking
@@ -53,7 +50,7 @@ def send_sms_africa(phone_number: str, message: str):
     # Method 1: Try Africa's Talking (if working)
     try:
         response = sms.send(message, [phone_number])
-        print(f"🔍 Africa's Talking Response: {response}")
+        print(f" Africa's Talking Response: {response}")
         
         # Check if SMS was actually sent successfully
         if 'SMSMessageData' in response and 'Recipients' in response['SMSMessageData']:
@@ -78,8 +75,6 @@ def send_sms_africa(phone_number: str, message: str):
     # Method 2: Simulation mode (for testing)
     print(f" SMS SIMULATION: Would send to {phone_number}: {message[:50]}...")
     return {"status": "simulated", "provider": "simulation", "message": "SMS simulated successfully"}
-
-# =============================================================================
 # FIREBASE FIRESTORE SETUP
 # =============================================================================
 import firebase_admin
@@ -114,7 +109,6 @@ def init_firestore():
     except Exception as e:
         print(f" Firestore init error: {e}")
 
-# =============================================================================
 # CONFIG
 # =============================================================================
 
@@ -135,10 +129,7 @@ FEATURE_COLS = [
 ]
 EE_SERVICE_ACCOUNT = os.getenv("EE_SERVICE_ACCOUNT")
 EE_SERVICE_KEY = os.getenv("EE_SERVICE_KEY")
-LOCAL_EE_SERVICE_ACCOUNT = "harara-service@south-sudan-heatwave.iam.gserviceaccount.com"
-LOCAL_EE_KEY_FILE = "south-sudan-heatwave-583da500ae5f.json"
 
-# =============================================================================
 # FASTAPI APP
 # =============================================================================
 
@@ -219,7 +210,7 @@ def build_ee_objects():
         "Malakal": ee.Geometry.Point([32.4730, 9.5330]).buffer(3000),
         "Bentiu": ee.Geometry.Point([29.7820, 9.2330]).buffer(3000),
     }
-    print("✅ EE collections & towns ready")
+    print(" EE collections & towns ready")
 
 # =============================================================================
 # ML ARTIFACTS
@@ -233,7 +224,7 @@ def load_artifacts():
         THRESHOLD = float(json.load(f)["threshold"])
     SCALER = joblib.load(os.path.join(ARTIFACT_DIR, "scaler.pkl"))
     MODEL = tf.keras.models.load_model(os.path.join(ARTIFACT_DIR, "model.keras"))
-    print(f"✅ Artifacts loaded (threshold={THRESHOLD})")
+    print(f" Artifacts loaded (threshold={THRESHOLD})")
 
 # =============================================================================
 # FEATURE FETCHING + IMPUTATION
@@ -717,7 +708,7 @@ def send_manual_alert(request: ManualAlertRequest):
             users = FIRESTORE_DB.collection("users").where(filter=firestore.FieldFilter("town", "==", request.town)).where(filter=firestore.FieldFilter("active", "==", True)).stream()
             recipients = [user.to_dict().get("phone_number") for user in users if user.to_dict().get("phone_number")]
         except Exception as e:
-            print(f"⚠ Error fetching users: {e}")
+            print(f" Error fetching users: {e}")
         
         if not recipients:
             recipients = ["+250792403010"]
@@ -773,7 +764,7 @@ def trigger_demo_alert():
             users = FIRESTORE_DB.collection("users").where(filter=firestore.FieldFilter("town", "==", town)).where(filter=firestore.FieldFilter("active", "==", True)).stream()
             recipients = [user.to_dict().get("phone_number") for user in users if user.to_dict().get("phone_number")]
         except Exception as e:
-            print(f"⚠ Error fetching users: {e}")
+            print(f" Error fetching users: {e}")
         
         if not recipients:
             recipients = ["+250792403010"]
@@ -923,30 +914,30 @@ def scheduler_run_now():
 @app.on_event("startup")
 def on_startup():
     try:
-        print("🚀 Starting Harara API initialization...")
+        print(" Starting Harara API initialization...")
         
         # Database
         SQLModel.metadata.create_all(engine)
-        print("✅ Database initialized")
+        print(" Database initialized")
         
         # ML Artifacts
         load_artifacts()
-        print("✅ ML artifacts loaded")
+        print(" ML artifacts loaded")
         
         # Google Earth Engine
         init_gee()
         if EE_READY:
             build_ee_objects()
-            print("✅ Google Earth Engine ready")
+            print(" Google Earth Engine ready")
         else:
-            print("⚠️ Google Earth Engine not ready")
+            print(" Google Earth Engine not ready")
         
         # Firestore
         init_firestore()
         if FIRESTORE_DB:
-            print("✅ Firestore connected")
+            print(" Firestore connected")
         else:
-            print("⚠️ Firestore not connected")
+            print(" Firestore not connected")
         
         # Logging service
         init_logger(FIRESTORE_DB)
@@ -966,12 +957,12 @@ def on_startup():
                 replace_existing=True
             )
             scheduler.start()
-            print("✅ Scheduler started for 07:00 daily (Africa/Kigali)")
+            print(" Scheduler started for 07:00 daily (Africa/Kigali)")
         
-        print("🎉 Harara API initialization complete!")
+        print(" Harara API initialization complete!")
         
     except Exception as e:
-        print(f"❌ Startup error: {e}")
+        print(f" Startup error: {e}")
         import traceback
         traceback.print_exc()
 
@@ -1125,7 +1116,7 @@ def run_predictions() -> Dict:
         "predictions": preds,
     }
     upload_predictions_to_firestore(result)
-    print("✅ Predictions completed with per-town variability.")
+    print(" Predictions completed with per-town variability.")
     return result
 
 # =============================================================================
@@ -1133,7 +1124,7 @@ def run_predictions() -> Dict:
 # =============================================================================
 def upload_predictions_to_firestore(result):
     if FIRESTORE_DB is None:
-        print("⚠ Firestore not initialized — skipping upload")
+        print(" Firestore not initialized — skipping upload")
         return
     date_str = dt.datetime.now(ZoneInfo(TIMEZONE)).strftime("%Y-%m-%d")
     for p in result["predictions"]:
@@ -1154,7 +1145,7 @@ def upload_predictions_to_firestore(result):
     print("📡 Uploaded predictions to Firestore successfully.")
 
 # =============================================================================
-# ROUTES + SCHEDULER (unchanged from your original)
+# ROUTES + SCHEDULER
 # =============================================================================
 from apscheduler.schedulers.background import BackgroundScheduler
 from apscheduler.triggers.cron import CronTrigger
@@ -1166,7 +1157,7 @@ def on_shutdown():
     global scheduler
     if scheduler:
         scheduler.shutdown(wait=False)
-        print("🛑 Scheduler stopped")
+        print(" Scheduler stopped")
 
 @app.post("/predict/run", tags=["Predictions"])
 def predict_run(): return run_predictions()
