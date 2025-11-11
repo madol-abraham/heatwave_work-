@@ -96,7 +96,7 @@ npm start
  
  **Accurate heatwave predictions** for 6 South Sudan cities  
  **Real-time SMS alerts** sent to registered users  
- **Interactive maps** showing risk levels and forecasts  
+ **Interactive charts** showing risk levels and forecasts  
  **Multi-language support** with Arabic localization  
  **Responsive design** across mobile, tablet, and desktop  
  **Firebase integration** for real-time data sync  
